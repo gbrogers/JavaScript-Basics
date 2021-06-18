@@ -24,7 +24,13 @@ const reader = readline.createInterface({
 reader.question("Please enter your password.", function (answer) {
   const regex = /[*&$!^]/g;
   if (answer.length > 10 && regex.test(answer) === true) {
-    console.log("Great job! This is valid.");
+    console.log(
+      "____   ____     .__  .__   __\n" +
+        "\\   \\ /  /____ |  | |__| __| |\n" +
+        " \\   Y   /  |  |  | |  | __  | \n" +
+        "  \\     / / __ |  |_|  | |_| | \n" +
+        "   \\___/ (____ /____/__|____ | \n"
+    );
   } else {
     console.log("Not valid... please try again.");
   }
