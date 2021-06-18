@@ -21,6 +21,20 @@ let me = {
   greeter: "Hello! My name is Giselle and I live in Utah",
 };
 
+//////
+let meUpdate = {
+  firstName: "Giselle",
+  state: "Utah",
+  age: 25,
+  greeter: function () {
+    console.log(
+      `Hello! My name is ${this.firstName} and I live in ${this.state}`
+    );
+  },
+};
+
+//meUpdate.greeter();
+
 //console.log(me);
 
 //////////////////PROBLEM 2////////////////////
